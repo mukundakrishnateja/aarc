@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+.nav-link1 {
+    color: white;
+    font-size: 30px;
+    transition: all 0.5s;
+    margin-right: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.book-button1 {
+    text-decoration: none;
+}
+
+.nav-link1:hover {
+    color: white;
+    transform: translateY(-5px);
+}
+
+.logo {
+    width: 80px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.navbar-in-carousel {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    /* Make sure it appears above the carousel */
+    background-color: transparent;
+    /* Optional: Semi-transparent background */
+}
+
+.hi {
+    margin-bottom: 400px;
+    text-align: left;
+}
+
+.heading-satish {
+    font-family: "Roboto";
+    font-size: 50px;
+}
+
+.Services-mainheading {
+    font-family: "Roboto";
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pr_container {
+    margin-bottom: 45px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.pr_container:hover {
+    transform: scale(1.2);
+}
+
+
+.icon_p {
+    font-size: 50px;
+}
+
+.car_washheading_p {
+    font-size: 20px;
+
+}
+
+
+.icon_p1 {
+    width: 50px;
+}
+
+.CardServices {
+    padding: 20px;
+    border-radius: 16px;
+    border-top-color: #000000;
+    border-bottom-color: #000000;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.CardServices:hover {
+    transform: scale(1.05);
+}
+
+.cardheading {
+    font-size: 20PX;
+}
+
+.fa-sharp {
+    font-size: 30px;
+    padding: 10px;
+    color: #2224a3;
+}
+
+.serviceimage {
+    border-radius: 16px;
+    width: 100%;
+}
+
+.cart-container {
+    padding: 20px;
+}
+
+.select-slot-card-b {
+    background-color: black;
+}
+
+.select-slot-paragraph-b {
+    color: white;
+    font-weight: bold;
+}
+
+.select-slot-datecard-b {
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+.select-slot-heading-b {
+    font-size: 18px;
+}
+
+.select-slot-currentdate-b {
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s linear 0s;
+}
+
+.select-slot-month-b {
+    font-weight: 500px;
+}
+
+.select-slot-date-b {
+    font-weight: bold;
+}
+
+.select-slot-currentdate-b:hover {
+    background-color: black;
+    transform: scale(1.2);
+    color: white;
+}
+
+.select-slot-card-2 {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+
+.select-slot-service-description {
+    color: brown;
+}
+
+
+.slot-timing-b {
+    background-color: white;
+    height: 40px;
+    width: 80px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding-top: 4px;
+    font-weight: bold;
+    transition: all 0.2s ease-in 0s;
+}
+
+.slot-timing-b:hover {
+    background-color: orange;
+    color: white;
+    border-width: 0px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.btn {
+    transition: all 0.2s ease-in 0s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    background-color: black;
+    color: white;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.main-kt {
+    background-color: black;
+    padding: 15px;
+}
+
+.head-1-kt {
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+}
+
+.content-kt {
+    border-color: white;
+    margin: 10px;
+    transition: all 0.2s ease-in 0s;
+
+
+}
+
+.para-kt {
+    color: white;
+}
+
+.py-kt {
+    color: black;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bi-kt {}
+
+.img-kt {
+    width: 70%;
+}
+
+.list {
+    color: white;
+    font-size: 17px;
+    font-family: "Roboto";
+}
+
+.head-2-kt {
+    color: grey;
+    font-size: 24px;
+    transition: all 0.2s ease-in 0s;
+}
+
+.head-2-kt:hover {
+    color: blue;
+
+}
+
+.para-1-kt {
+    color: white;
+}
+
+.sp-kt {
+    color: blue;
+}
+
+.para-2-kt {
+    margin-top: 10px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.head-2-kt:hover {
+    font-size: 30px;
+}
+
+.container-poster {
+    background-color: #2f3030;
+}
+
+.poster-head {
+    font-size: 30px;
+    font-family: "Bree Serif";
+}
+
+.poster-para {
+    font-size: 15px;
+}
+
+.poster-image {
+    transition: all 0.5s;
+}
+
+.poster-image:hover {
+    transform: rotate(-25deg);
+}
+
+.brandimage {
+    border-radius: 12px;
+}
+
+.fa-sharp {
+    font-size: 30px;
+    padding: 10px;
+    color: #2224a3;
+}
+
+.fa-sharp:hover {
+    font-size: 40px;
+}
+
+img {
+    transition: all 0.3s ease-in 0s;
+
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.backgroung-image-niat-s {
+    background-color: #000000;
+    height: 100vh;
+}
+
+.sign-in-s {
+    width: 100%;
+    background-color: #696b6a;
+    border-radius: 20px;
+    padding: 40px;
+
+}
+
+.image-s {
+    width: 20vw;
+    margin-bottom: 0px;
+}
+
+.red {
+    color: orange;
+}
+
+
+
+.box {
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    border-style: solid;
+}
+
+.button {
+    background-color: lightgreen;
+}
+
+.button:hover {
+    background-color: yellow;
+}
+
+
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.selected {
+    font-size: 30px;
+}
+
+.success-page {
+    background-color: black;
+    height: 100vh;
+}
+
+.data-container {
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.seleced-brand-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
+
+.book-container {
+    text-align: center;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7edc8;
+    border-radius: 20px;
+    font-family: "Roboto";
+}
+
+#minutes {
+    font-size: 20px;
+}
+
+#seconds {
+    font-size: 20px;
+}
+
+.tick {
+    border-radius: 100px;
+}
+
+.container-brands {
+    background-color: #baf5bc;
+}
+
+.minutes {
+    font-size: 30px;
+}
+
+.book-desc {
+    font-size: 20px;
+}
+
+.video-container {
+    height: 60vh;
+    width: 70vw;
+}
+
+.bg-color {
+    background-image: linear-gradient(to bottom left, black, gray);
+}
+
+.logo2 {
+    width: 40px;
+    background-color: black;
+    border-radius: 45px;
+}
+
+.book-button {
+    color: white;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+    height: 45px;
+    width: 130px;
+    background-color: #fa7602;
+    border-radius: 8px;
+}
+
+.book-button:hover {
+    transform: scale(1.1);
+}
+
+.mapsss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-work-main-container {
+    background: #090200;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.latest-work-container {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.swiper-container {
+    width: 90%;
+    max-width: 1000px;
+    height: 500px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide .content {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+/* Navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #007bff;
+    font-size: 20px;
+}
+
+/* Pagination styles */
+.swiper-pagination-bullet {
+    background: #007bff;
+    opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+    background: #dc3545;
+}
+
+.how-it-works {
+    font-family: "Roboto";
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+}
+
+.how-it-works-para {
+    font-family: "Roboto";
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    width: 70vw;
+}
+
+.how-it-works-para-container {
+    display: flex;
+    justify-content: center;
+}
+.login-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
