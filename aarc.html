@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/70a7171044.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Swiper Carousel</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="aarc.css">
+</head>
+
+<body>
+    <div id="sectionhome-page">
+        <nav class="navbar navbar-expand-lg bg-color d-block d-md-none navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1734858681/AARC_LOGO-final_ytd2op.png" class="logo2" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <nav class="navbar navbar-expand-lg navbar-in-carousel d-none d-md-block">
+                <div class="container-fluid">
+                    <div class="container-logo">
+                        <a class="navbar-brand nav-link" href="#"><img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1734858681/AARC_LOGO-final_ytd2op.png" class="logo mt-0 mb-0" /></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mb-5" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link1" href="#">Home</a>
+                            <a class="nav-link1" href="#">Our Services</a>
+                            <a class="nav-link1" href="#">Our Team</a>
+                            <a class="nav-link1" href="#">Contact Us</a>
+                        </div>
+                        <!-- <div class="navbar-nav">
+                            <img id="personId" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG4iROexcxNjbChJZzoDTwNvqp90l8EwDr5Q&s" class="seleced-brand-image d-none" />
+                            <div id="personCircle">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle nav-link1" viewBox="0 0 16 16" onclick="display('sectionlogin')" id="personCircle">
+                                   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                   <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                               </svg>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </nav>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video class="w-100" autoplay muted>
+                        <source src="https://res.cloudinary.com/dx1fxetg2/video/upload/v1734851979/6872469-uhd_3840_2160_25fps_qwvr9p.mp4" />
+                    </video>
+                    <div class="carousel-caption d-none d-md-block hi">
+                        <h1 class="heading-satish">AARC DOORSTEP <br>CAR WASH</h1>
+                        <p class="text-white">Experience premium doorstep car wash services! <br>Book for expert wash services delivered to your <br>home by our dedicated professionals."</p>
+                        <a href="https://wa.me/916302268349?text=Hello,%20I%20would%20like%20to%20book%20a%20service" target="_blank">
+                            <button class="book-button">Book Service</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <video class="w-100" autoplay muted>
+                        <source src="https://videos.pexels.com/video-files/6873168/6873168-sd_640_360_25fps.mp4" />
+                    </video>
+                    <div class="carousel-caption d-none d-md-block hi">
+                        <h1 class="heading-satish">AARC DOORSTEP <br>CAR WASH</h1>
+                        <p class="text-white">Experience premium doorstep car wash services! <br>Book for expert wash services delivered to your <br>home by our dedicated professionals."</p>
+                        <a href="https://wa.me/916302268349?text=Hello,%20I%20would%20like%20to%20book%20a%20service" target="_blank">
+                            <button class="book-button">Book Service</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <video class="w-100" autoplay muted>
+                        <source src="https://videos.pexels.com/video-files/6873329/6873329-sd_640_360_25fps.mp4" />
+                    </video>
+                    <div class="carousel-caption d-none d-md-block hi">
+                        <h1 class="heading-satish">AARC DOORSTEP <br>CAR WASH</h1>
+                        <p class="text-white">Experience premium doorstep car wash services! <br>Book for expert wash services delivered to your <br>home by our dedicated professionals."</p>
+                        <a href="https://wa.me/916302268349?text=Hello,%20I%20would%20like%20to%20book%20a%20service" target="_blank">
+                            <button class="book-button">Book Service</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container-fluid pt-2 mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="Services-mainheading mb-5 pb-5 mt-5">Our Services</h1>
+                </div>
+                <section class="col-6 col-md-3 mb-5">
+                    <div class="pr_container text-center">
+                        <!-- <i onclick="display('sectionCars')" class="hovering fa-solid fa-car icon_p"></i> -->
+                        <i class="hovering fa-solid fa-car icon_p"></i>
+                        <h1 class="car_washheading_p">Car Wash</h1>
+                    </div>
+                </section>
+                <section class="col-6 col-md-3 mb-5">
+                    <section class="pr_container text-center">
+                        <!-- <i onclick="display('sectionBike')" class="hovering fa-solid fa-motorcycle icon_p"></i> -->
+                        <i class="hovering fa-solid fa-motorcycle icon_p"></i>
+                        <h1 class="car_washheading_p">Bike Wash</h1>
+                    </section>
+                </section>
+                <section class="col-6 col-md-3 mb-5">
+                    <section class="pr_container text-center">
+                        <!-- <svg onclick="display('sectionCoating')" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-stars icon_p1" viewBox="0 0 16 16">
+                            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                        </svg> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-stars icon_p1" viewBox="0 0 16 16">
+                            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                        </svg>
+                        <h1 class="car_washheading_p">Ceramic Coating</h1>
+                    </section>
+                </section>
+                <section class="col-6 col-md-3 mb-5">
+                    <section class="pr_container text-center">
+                        <img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1734891001/clean_qluwfh.png" class="icon_p1" />
+                        <h1 class="car_washheading_p">Seats cleaning</h1>
+                    </section>
+                </section>
+                <section class="col-6 col-md-3">
+                    <section class="pr_container text-center">
+                        <img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1734891812/glass-cleaning_aeyiur.png" class="icon_p1" />
+                        <h1 class="car_washheading_p">Glass cleaning</h1>
+                    </section>
+                </section>
+                <section class="col-6 col-md-3">
+                    <section class="pr_container text-center">
+                        <img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1734891811/tire-cleaning_xfgkb3.png" class="icon_p1" />
+                        <h1 class="car_washheading_p">Tyre polish</h1>
+                    </section>
+                </section>
+                <section class="col-6 col-md-3">
+                    <section class="pr_container text-center">
+                        <img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1734891809/cleaning_jbezhr.png" class="icon_p1" />
+                        <h1 class="car_washheading_p">Dashboard Polish</h1>
+                    </section>
+                </section>
+                <section class="col-6 col-md-3">
+                    <section class="pr_container text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-ev-front-fill icon_p1" viewBox="0 0 16 16">
+                            <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848Zm6.75.51a.186.186 0 0 0-.23.034L6.05 7.246a.188.188 0 0 0 .137.316h1.241l-.673 2.195a.19.19 0 0 0 .085.218c.075.043.17.03.23-.034l2.88-3.187a.188.188 0 0 0-.137-.316H8.572l.782-2.195a.19.19 0 0 0-.085-.218Z" />
+                        </svg>
+                        <h1 class="car_washheading_p">Interior vacume</h1>
+                    </section>
+                </section>
+                <div class="text-center">
+                    <a href="https://wa.me/916302268349?text=Hello,%20I%20would%20like%20to%20book%20a%20service" target="_blank">
+                        <button class="book-button mt-5 mb-5">Book Service</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-poster mt-5 p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="co1-12 col-md-4">
+                        <div class="text-center">
+                            <img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1734873013/door_to_door_service_poster_tolpgl.jpg" class="w-75 shadow-lg poster-image" />
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-12">
+                        <div class="d-flex flex-column justify-content-center poster-div mt-4 text-center">
+                            <div class="mt-md-5">
+                                <h1 class="text-white poster-head">"Sparkle Anywhere, Anytime!"</h1>
+                                <p class="text-white poster-para">Experience hassle-free car washing like never before. Book our online service, and our skilled professionals will come to you, ensuring your car gets a showroom-like shine. From exterior washes to interior detailing, we deliver perfection with eco-friendly solutions, right at your doorstep!</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-qr-code-scan text-white" viewBox="0 0 16 16">
+                                        <path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5M.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5M4 4h1v1H4z" />
+                                        <path d="M7 2H2v5h5zM3 3h3v3H3zm2 8H4v1h1z" />
+                                        <path d="M7 9H2v5h5zm-4 1h3v3H3zm8-6h1v1h-1z" />
+                                        <path d="M9 2h5v5H9zm1 1v3h3V3zM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8zm2 2H9V9h1zm4 2h-1v1h-2v1h3zm-4 2v-1H8v1z" />
+                                        <path d="M12 9h2V8h-2z" />
+                                    </svg>
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Scan qr to book service</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1734873013/qr-booking_cmw9mb.jpg" class="w-100" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/916302268349?text=Hello,%20I%20would%20like%20to%20book%20a%20service" target="_blank">
+                                    <button class="book-button">Book Service</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-5 mt-5 pb-5 mb-5 text-center">
+            <h1 class="how-it-works">How the process goes</h1>
+            <div class="how-it-works-para-container">
+                <p class="how-it-works-para mb-5">AARC is a doorstep car washing service specializing in exterior and interior car washes, including water washes. Without stepping outside, get your vehicle cleaned and refreshed right at your home. We ensure convenience, quality, and a hassle-free experience for every customer!</p>
+            </div>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item video-container" src="https://www.youtube.com/embed/nLfRqar4f8c?rel=0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="latest-work-main-container d-none d-lg-block">
+            <h1 class="Services-mainheading mb-5 text-light">Recent Works</h1>
+            <div class="latest-work-container mt-0">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1738257265/WhatsApp_Image_2025-01-30_at_10.03.13_PM_mgsavy.jpg" alt="Slide 1">
+                            <div class="content">Slide 1 Caption</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1738257265/WhatsApp_Image_2025-01-30_at_10.27.25_PM_leyxlz.jpg" alt="Slide 2">
+                            <div class="content">Slide 2 Caption</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1738257265/WhatsApp_Image_2025-01-30_at_10.27.27_PM_ipyzpk.jpg" alt="Slide 3">
+                            <div class="content">Slide 3 Caption</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1738257760/WhatsApp_Image_2025-01-30_at_10.52.06_PM_apudm7.jpg" alt="Slide 4">
+                            <div class="content">Slide 4 Caption</div>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Navigation Buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main-kt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 mapsss">
+                        <img class="img-kt" src=https://www.focus.it/site_stored/imgs/0003/021/google-maps.jpg>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <h1 class="head-1-kt">F.A.Q</h1>
+                        <div class="content-kt">
+                            <div class="py-kt">
+                                <p class="para-kt">How do i book a service?
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill me-auto" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                                    </svg>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-kt">
+                            <div class="py-kt">
+                                <p class="para-kt">How long does the detail usually take?
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                                    </svg>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-kt">
+                            <div class="py-kt">
+                                <p class="para-kt">What if I don't have access to water or electricity?
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                                    </svg>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 d-none d-md-block">
+                            <h1 class="head-2-kt text-light">Locations-served</h1>
+                            <ul>
+                                <p class="para-1-kt">♦ Gachibowli, OR </p>
+                                <p class="para-1-kt">♦ Kokapet, OR</p>
+                                <p class="para-1-kt">♦ Madhapur, OR</p>
+                                <p class="para-1-kt">♦ Gowlidoddy, OR</p>
+                                <p class="para-1-kt">♦ Kondapoor, OR </p>
+                                <p class="para-1-kt">♦ Financial dist, OR </p>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                            <h1 class="head-2-kt text-light">SERVICES</h1>
+                            <ul>
+                                <li class="list">Mobile Detailing</li>
+                                <li class="list">Interior Detailing</li>
+                                <li class="list">Ceramic Coating</li>
+                                <li class="list">Window Tinting</li>
+                                <li class="list">Exterior Detailing</li>
+                                <li class="list">Dealerships</li>
+                                <li class="list">Fleet Cleaning</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                            <h1 class="head-2-kt text-light">TERMS</h1>
+                            <ul>
+                                <li class="list">Service Agreement</li>
+                                <li class="list">Terms of Service</li>
+                                <li class="list">Privacy Policy</li>
+                                <li class="list">Contact Us</li>
+                                <li class="list">About Us</li>
+                                <li class="list">Site Map</li>
+                                <li class="list">Car Wash</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                            <h1 class="head-2-kt text-light">HOURS</h1>
+                            <p class="para-1-kt">Open Monday – Sunday<br>
+                                8:30 AM to 6:00 PM<br>
+                                by Appointment Only</p>
+                            <p class="para-1-kt">NextGen dolphin co-living<br>
+                                Gowlidoddy,Gachibowli,Hyderabad</p>
+                            <p class="para-1-kt">Get In Touch<br>
+                                <a style="text-decoration:none;" href="https://wa.me/916302268349?text=Hello,%20I%20would%20like%20to%20book%20a%20service" target="_blank">
+                                    <span class="sp-kt">(+91) 6302268349</span>
+                                </a>
+                            </p>
+                            <p class="para-1-kt">Learn about AARC</p>
+                            <a target="_blank" style="text-decoration:none;" href="https://www.instagram.com/aarcindia.in/?next=https%3A%2F%2Fwww.instagram.com%2Foauth%2Foidc%2F%3Fapp_id%3D466141399108590%26redirect_uri%3Dhttps%253A%252F%252Fwww.meta.ai%252Fauth%252Fig%252F%26response_type%3Dcode%26scope%3Dopenid%252Clinking%26state%3DATDQ3BLgHdqY6OTD3CvEtql6m-W8SeWKaFclCFGMUJEiYeccYo1nqQhVkyKNtTeJA2tVfDlr-E8tz0IItNXznY7RfnKwVklRd6T1k6daQGnamamnea4nclVLkfif9sYrCIJt8tMT_oUFfbrni2y3dWp_14sx1QeaTwSXw2bxdznNhZ3jrqBI2j-m60PzSXVe9Jdu3zm02fwgGs8VS-3OWcrbnI55rLbpRyl2IhzLdqUqpZZF9AEcAyHIWDhy_bYnsM-oGuFJufHpy5tfQ96fulLAwiJsWKimUI2IjJqzTl7fSwhbovzRX2dMv72CzM_POselmTo5M1Mw0Tm-NuPd8F1D3g%26force_consent%3D1%26logger_id%3D9d56430d-8b98-40bf-b4ad-1f5a284ef6b0%26force_authentication%3D0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-instagram me-2" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+                            </a>
+                            <a target="_blank" style="text-decoration:none;" href="https://www.linkedin.com/in/aarc-services-india-51873b349/"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-linkedin me-2" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                </svg></a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="para-2-kt text-center">Copyright © AARC doorstep carwash. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <div id="section-brands">
+        <section class="sectionlogos">
+            <div>
+                <i class="fa-sharp fa-solid fa-arrow-left" onclick="display('sectionhome-page')"></i>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 mb-5">
+                        <div class="d-flex flex-column justify-content-center p-3 d-none container-brands" id="sectionselected">
+                            <div class="d-flex flex-row justify-content-center p-5 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="green" class="bi bi-check-circle-fill m-1 bg" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                                <p class="selected">Successfully your car brand has been selected</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h1 class="text-center" id="selectBrand">Select Your Car Brand</h1>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="m-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG4iROexcxNjbChJZzoDTwNvqp90l8EwDr5Q&s" class="brandimage w-100 shadow-lg" id="audiBrand" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="m-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi882htrkEk9fTAao0Bj-UH_ugjzC4c7gbnw&s" class="brandimage w-100 shadow-lg" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="m-2">
+                            <img src="https://www.ranjitbrostaxi.com/images/toyota1.jpg" class="brandimage w-100 shadow-lg" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="m-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4EUE_rr34u6Xj5EbLEguwBVAJz0cExuogPw&s" class="brandimage w-100 shadow-lg" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="m-2">
+                            <img src="https://i.pinimg.com/736x/6d/cc/f2/6dccf2937c808f0a22f82e1be59d5a91.jpg" class="brandimage w-100 shadow-lg" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="m-2">
+                            <img src="https://static.theprint.in/wp-content/uploads/2024/09/Untitled-design-2024-09-13T181717.692.png" class="brandimage w-100 shadow-lg" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="m-2">
+                            <img src="https://i.pinimg.com/564x/6d/e4/00/6de400a0a870cdcca1ab9a55c4753282.jpg" class="brandimage w-100 shadow-lg" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="m-2">
+                            <img src="https://www.designyourway.net/blog/wp-content/uploads/2023/06/Featuredtata-1.jpg" class="brandimage w-100 shadow-lg" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="m-2 pb-3">
+                            <img src="https://as2.ftcdn.net/jpg/04/98/14/75/1000_F_498147584_ym2nlGubbo9LA5QawOtOWmmKOdqXHQpA.jpg" class="brandimage w-100 shadow-lg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div id="sectionCars">
+        <div>
+            <i onclick="display('sectionhome-page')" class="fa-sharp fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 mt-3">
+                    <div class="CardServices">
+                        <div>
+                            <img class="serviceimage" src="https://www.godetail.com/wp-content/uploads/2024/09/66e15014d33ea877d324473f_ext-wash-p-1080-480x269.jpg" />
+                        </div>
+                        <p class="mt-3">Our Refresh Package. Best for maintenance or quick refresh.</p>
+                        <h1 class="cardheading">EXTERIOR</h1>
+                        <ul>
+                            <li>Quick Hand Wash</li>
+                            <li>Clean Rims & Tires</li>
+                            <li>Wax Protection</li>
+                            <li>Clay Bar Exterior</li>
+                            <li>Clean Door Jams</li>
+                        </ul>
+                        <!-- <button class="btn btn-primary" id="bookOne">Book Now</button> -->
+                        <a href="https://wa.me/916302268349?text=Hello,%20I%20would%20like%20to%20book%20a%20service" target="_blank" class=" book-button1">
+                            <button class="btn btn-primary">Book Now</button>
+                        </a>
+                        <!-- <button class="btn btn-warning m-3" id="cartButton">Add Cart</button>
+                        <button class="btn btn-success m-3 d-none" id="viewButton" onclick="display('sectionCart')">View Card</button>
+                        <div class="d-flex flex-row justify-content-center d-none container-brands" id="addText">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-check-circle-fill m-1 bg" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>
+                            <p>Successfully added to cart</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-3">
+                    <div class="CardServices">
+                        <div>
+                            <img class="serviceimage" src="https://www.godetail.com/wp-content/uploads/2024/09/66eb766fa74fee461fa103d9_gold-detail-1-p-1080-980x550.jpg" />
+                        </div>
+                        <p class="mt-3">Our Standard Package. A very thorough inside-out detail.</p>
+                        <h1 class="cardheading">INTERIOR</h1>
+                        <ul>
+                            <li>Double Vacuum Interior</li>
+                            <li>Wipe all surfaces</li>
+                            <li>Windows & Mirrors</li>
+                            <li>Detail Floor Mats and Shine</li>
+                            <li>Detail Trunk & Door Jambs</li>
+                        </ul>
+                        <!-- <button class="btn btn-primary" onclick="display('sectionSlot')">Book Now</button> -->
+                        <a href="https://wa.me/916302268349?text=Hello,%20I%20would%20like%20to%20book%20a%20service" target="_blank" class=" book-button1">
+                            <button class="btn btn-primary">Book Now</button>
+                        </a>
+                        <!-- <button class="btn btn-warning m-3">Add Cart</button> -->
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-3">
+                    <div class="CardServices">
+                        <div>
+                            <img class="serviceimage" src="https://www.godetail.com/wp-content/uploads/2024/06/Depositphotos_310989276_XL-400x250.jpg" />
+                        </div>
+                        <p class="mt-3">Complete cleaning process that includes all parts of car.</p>
+                        <h1 class="cardheading">DEEP CLEAN</h1>
+                        <ul>
+                            <li>Cleaning</li>
+                            <li>Sanitizing</li>
+                            <li>Disinfecting</li>
+                            <li>Clay Bar Exterior</li>
+                            <li>Clean Door Jams</li>
+                        </ul>
+                        <!-- <button class="btn btn-primary" onclick="display('sectionSlot')">Book Now</button> -->
+                        <a href="https://wa.me/916302268349?text=Hello,%20I%20would%20like%20to%20book%20a%20service" target="_blank" class=" book-button1">
+                            <button class="btn btn-primary">Book Now</button>
+                        </a>
+                        <!-- <button class="btn btn-warning m-3">Add Cart</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionBike">
+        <div>
+            <i onclick="display('sectionhome-page')" class="fa-sharp fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 mt-3">
+
+                    <div class="CardServices">
+                        <div>
+                            <img class="serviceimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgm8Pv9A1fWf1YsjXLIenDA_4PSh3IHux7JA&s" />
+                        </div>
+                        <p class="mt-3">Our Refresh Package. Best for maintenance or quick refresh.</p>
+                        <h1 class="cardheading">Touchless Wash</h1>
+                        <ul>
+                            <li>Quick Hand Wash</li>
+                            <li>Clean Rims & Tires</li>
+                            <li>Wax Protection</li>
+                            <li>Clay Bar Exterior</li>
+                            <li>Cloth wash</li>
+                        </ul>
+                        <a href="https://wa.me/916302268349?text=Hello,%20I%20would%20like%20to%20book%20a%20service" target="_blank" class=" book-button1">
+                            <button class="btn btn-primary">Book Now</button>
+                        </a>
+                        <!-- <button class="btn btn-primary" onclick="display('sectionSlot')">Book Now</button> -->
+                        <!-- <button class="btn btn-warning m-3">Add Cart</button> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-3">
+                    <div class="CardServices">
+                        <div>
+                            <img class="serviceimage" src="https://content.jdmagicbox.com/comp/narasaraopet/n5/9999p8647.8647.200611185030.t5n5/catalogue/nikhil-water-service-car-bike-wash-piduguralla-narasaraopet-g6qy1b3s1h.jpg?clr=" />
+                        </div>
+                        <p class="mt-3">Our Standard Package. A very Quick Wash with Foam.</p>
+                        <h1 class="cardheading">Foam Wash</h1>
+                        <ul>
+                            <li>Apply Foam</li>
+                            <li>Wipe all surfaces</li>
+                            <li>Spray Water</li>
+                            <li>Tire Polish</li>
+                            <li>Handile Clean</li>
+                        </ul>
+                        <a href="https://wa.me/916302268349?text=Hello,%20I%20would%20like%20to%20book%20a%20service" target="_blank" class=" book-button1">
+                            <button class="btn btn-primary">Book Now</button>
+                        </a>
+                        <!-- <button class="btn btn-primary" onclick="display('sectionSlot')">Book Now</button> -->
+                        <!-- <button class="btn btn-warning m-3">Add Cart</button> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-3">
+                    <div class="CardServices">
+                        <div>
+                            <img class="serviceimage" src="https://img77.uenicdn.com/image/upload/v1589698169/business/59956048-84f4-4398-96a0-fc373b2a6555.jpg" />
+                        </div>
+                        <p class="mt-3">Complete cleaning process that includes all parts of Bike.</p>
+                        <h1 class="cardheading">Bleach Wash</h1>
+                        <ul>
+                            <li>Cleaning</li>
+                            <li>Sanitizing</li>
+                            <li>Disinfecting</li>
+                            <li>Clay Bar Exterior</li>
+                            <li>Clean Bike Parts</li>
+                        </ul>
+                        <a href="https://wa.me/916302268349?text=Hello,%20I%20would%20like%20to%20book%20a%20service" target="_blank" class=" book-button1">
+                            <button class="btn btn-primary">Book Now</button>
+                        </a>
+                        <!-- <button class="btn btn-primary" onclick="display('sectionSlot')">Book Now</button> -->
+                        <!-- <button class="btn btn-warning m-3">Add Cart</button> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionCoating">
+        <div>
+            <i onclick="display('sectionhome-page')" class="fa-sharp fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mt-3">
+
+                    <div class="CardServices">
+                        <div>
+                            <img class="serviceimage" src="https://www.godetail.com/wp-content/uploads/2024/09/66e376521799f5200deddd84_diamond-p-1080-480x269.jpg" />
+                        </div>
+                        <p class="mt-3">Our Refresh Package. Best for maintenance or quick refresh.</p>
+                        <h1 class="cardheading">Cut & Polish</h1>
+                        <ul>
+                            <li>2-Step Paint Correction Polish</li>
+                            <li>Professional Hand Wash</li>
+                            <li>Clay Bar Exterior</li>
+                            <li>Wheel Wells</li>
+                            <li>Detail Rim & Tir</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="display('sectionSlot')">Book Now</button>
+                        <button class="btn btn-warning m-3">Add Cart</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="CardServices">
+                        <div>
+                            <img class="serviceimage" src="https://www.godetail.com/wp-content/uploads/2024/09/66e3750caa40d1cd1a933144_red-p-p-800-1-480x269.jpg" />
+                        </div>
+                        <p class="mt-3">Complete cleaning process that includes all parts of car.</p>
+                        <h1 class="cardheading">Wax & Buff</h1>
+                        <ul>
+                            <li>1-Step Paint Correction Polish</li>
+                            <li>Professional Hand Wash</li>
+                            <li>Wheel Wells</li>
+                            <li>Clay Bar Exterior</li>
+                            <li>Detail Rim & Tires</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="display('sectionSlot')">Book Now</button>
+                        <button class="btn btn-warning m-3">Add Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionSlot">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex flex-row pt-3 select-slot-card-b">
+                    <div class="mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-arrow-left-short mb-2" viewBox="0 0 16 16" onclick="display('sectionhome-page')">
+                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                        </svg>
+                    </div>
+                    <p class="select-slot-paragraph-b">Select slot</p>
+                </div>
+                <div class="col-12">
+                    <div class="mt-3 p-4 select-slot-datecard-b">
+                        <div class="m-3">
+                            <h1 class="select-slot-heading-b">Select the Date for your Services</h1>
+                        </div>
+                        <div class="d-flex flex-row m-3 justify-content-center">
+                            <div class="select-slot-currentdate-b shadow m-2" id="date">
+                                <p class="m-0 select-slot-month-b">DEC</p>
+                                <p class="m-0 select-slot-date-b">22</p>
+                                <p class="m-0 select-slot-month-b">SUN</p>
+                            </div>
+                            <div class="select-slot-currentdate-b shadow m-2">
+                                <p class="m-0 select-slot-month-b">DEC</p>
+                                <p class="m-0 select-slot-date-b">22</p>
+                                <p class="m-0 select-slot-month-b">SUN</p>
+                            </div>
+                            <div class="select-slot-currentdate-b shadow m-2">
+                                <p class="m-0 select-slot-month-b">DEC</p>
+                                <p class="m-0 select-slot-date-b">22</p>
+                                <p class="m-0 select-slot-month-b">SUN</p>
+                            </div>
+                            <div class="select-slot-currentdate-b shadow m-2">
+                                <p class="m-0 select-slot-month-b">DEC</p>
+                                <p class="m-0 select-slot-date-b">22</p>
+                                <p class="m-0 select-slot-month-b">SUN</p>
+                            </div>
+                            <div class="select-slot-currentdate-b shadow m-2">
+                                <p class="m-0 select-slot-month-b">DEC</p>
+                                <p class="m-0 select-slot-date-b">22</p>
+                                <p class="m-0 select-slot-month-b">SUN</p>
+                            </div>
+                            <div class="select-slot-currentdate-b shadow m-2">
+                                <p class="m-0 select-slot-month-b">DEC</p>
+                                <p class="m-0 select-slot-date-b">22</p>
+                                <p class="m-0 select-slot-month-b">SUN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="select-slot-card-2 m-2 p-3">
+                        <h1 class="select-slot-heading-b">Select the start time for your services</h1>
+                        <p class="select-slot-service-description">Your service will take</p>
+                        <div class="d-flex flex-row">
+                            <p class="slot-timing-b ml-2">8:00 AM</p>
+                            <p class="slot-timing-b ml-2">8:00 AM</p>
+                            <p class="slot-timing-b ml-2">8:00 AM</p>
+                            <p class="slot-timing-b ml-2" id="Time">8:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="text-center">
+                        <button class="btn btn-info mt-5" id="bookTwo">Book Slot</button>
+                        <div class="d-flex flex-row justify-content-center d-none mb-5" id="bookSection">
+                            <div class="book-container p-3">
+                                <div class="d-flex flex-row justify-content-center p-2 ">
+                                    <h1 class="book-desc m-1">✅Successfully🎊 your service is booked</h1>
+                                </div>
+                                <p class="book-desc">Worker will reach you within</p>
+                                <p class="minutes"><span id="minutes" class="minutes">09</span> min <span id="seconds" class="minutes"></span> sec</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionlogin">
+        <div class="container-fluid backgroung-image-niat-s pb-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <div class="text-center">
+                                <img src="https://res.cloudinary.com/dx1fxetg2/image/upload/v1734858681/AARC_LOGO-final_ytd2op.png" class="image-s" />
+                            </div>
+                            <div class="sign-in-s  d-flex flex-column justify-content-center form-container">
+                                <form class="mt-0" id="formsatish">
+                                    <div class="w-100">
+                                        <div>
+                                            <label for="myname" style="font-weight:600; margin-bottom:7px; font-size:20px;">EMAIL</label><br>
+                                            <input type="text" id="myname" name="myname" placeholder="  Enter your Email" class="box"><br>
+                                            <p class="red" id="nameErrMsg"></p>
+                                            <label for="fname" style="font-weight:600; margin-bottom:7px; font-size:20px;">PASSWORD</label><br>
+                                            <input type="text" id="fname" name="fname" placeholder="  Enter your Password" class="box"><br>
+                                            <p class="red" id="passErrMsg"></p>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="" id="loginenablecontainer2">
+                                    <button class="btn btn-danger" onclick="display('section-brands')">Log In</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionCart">
+        <div class="cart-container">
+            <h1 class="item-name">Your Cart</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 mt-3">
+                        <div class="CardServices">
+                            <div>
+                                <img class="serviceimage" src="https://www.godetail.com/wp-content/uploads/2024/09/66e15014d33ea877d324473f_ext-wash-p-1080-480x269.jpg" />
+                            </div>
+                            <p class="mt-3">Our Refresh Package. Best for maintenance or quick refresh.</p>
+                            <h1 class="cardheading">EXTERIOR</h1>
+                            <ul>
+                                <li>Quick Hand Wash</li>
+                                <li>Clean Rims & Tires</li>
+                                <li>Wax Protection</li>
+                                <li>Clay Bar Exterior</li>
+                                <li>Clean Door Jams</li>
+                            </ul>
+                            <div class="d-flex flex-row justify-content-center">
+                                <button class="btn btn-danger m-1" id="removeBtn" onclick="display('sectionCars')">Remove</button>
+                                <button class="btn btn-dark m-1" onclick="display('sectionCars')">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow', // 3D Coverflow effect
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true, // Dynamic bullet effect
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+            },
+        });
+    </script>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
